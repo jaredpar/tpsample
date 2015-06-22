@@ -47,7 +47,6 @@
     <Compile Include="ProvidedTypes.fs" />
     <Compile Include="AssemblyInfo.fs" />
     <Compile Include="HelloWorld.fs" />
-    <None Include="Script.fsx" />
   </ItemGroup>
   <PropertyGroup>
     <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">11</MinimumVisualStudioVersion>

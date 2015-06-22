@@ -13,6 +13,12 @@ type HelloWorld() as this =
         let assembly = Assembly.GetExecutingAssembly()
         let ns = "TypeProvider.Samples"
         let t = ProvidedTypeDefinition(assembly, ns, "Container", None)
+        let p = ProvidedProperty(propertyName = "Message", 
+                                 propertyType = typeof<string>, 
+                                 IsStatic = true,
+                                 GetterCode = (fun args -> <@@ "Hello World" @@>))
+        t.AddMember(p)
+
         let all = [t]
         this.AddNamespace(ns, all)
 

@@ -51,13 +51,6 @@
     <Compile Include="Program.fs" />
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\HelloWorld\HelloWorld.fsproj">
-      <Name>HelloWorld</Name>
-      <Project>{f52e0556-e690-4ab6-adee-2c0af71f2cd1}</Project>
-      <Private>True</Private>
-    </ProjectReference>
-  </ItemGroup>
   <PropertyGroup>
     <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">11</MinimumVisualStudioVersion>
   </PropertyGroup>
